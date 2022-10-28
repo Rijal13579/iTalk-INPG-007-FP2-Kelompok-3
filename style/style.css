@@ -9,3 +9,292 @@
     padding: 0;
     font-family: Nunito;
 }
+
+/* navbar */
+.navbar .container a {
+    font-weight: 600;
+    color: #234CAD !important;
+}
+
+.navbar .hvr-underline-from-center:before {
+    background-color: #234CAD;
+    border-radius: 4rem;
+}
+
+.navbar .menu-bars {
+    padding: 2px 11px 2px 11px;
+    background-color: #F2F6FF;
+}
+
+.navbar .login-signup .btn {
+    font-weight: 700;
+    width: 95px;
+}
+
+.login-signup #login {
+    color: #234CAD !important;
+    border: 2px #234CAD solid;
+}
+
+.login-signup .hvr-radial-out:before {
+    background: #234CAD;
+    border-radius: 4rem;
+}
+
+.login-signup #login:hover {
+    /* background-color: #234CAD !important; */
+    color: #fff !important;
+}
+
+.login-signup #signup {
+    border: none;
+    color: #234CAD !important;
+    background-color: #F2F6FF !important;
+}
+
+.login-signup #signup:hover {
+    /* background-color: #234CAD !important; */
+    color: #fff !important;
+}
+
+/* banner */
+.header {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+.header .container .row {
+    border-radius: 4rem;
+    background-color: #F2F6FF;
+}
+
+/* .header .container .row {
+    padding-top: 138px;
+
+} */
+
+/* sisi kiri banner */
+.header .desc-left {
+    margin-top: 138px;
+}
+
+.header .desc-left h1 {
+    color: #234CAD;
+    line-height: 55px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.header .desc-left p {
+    color: #234CAD;
+    line-height: 21px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.header .desc-left .btn {
+    color: #234CAD !important;
+    border: 2px #234CAD solid;
+    font-weight: 700;
+    width: 150px;
+    height: 47px;
+}
+
+.header .desc-left .btn:hover {
+    background-color: #234CAD !important;
+    color: #fff !important;
+    border: none;
+}
+
+
+/* sisi kanan banner */
+/* .header .desc-right {
+    padding-top: 10px;
+} */
+
+/* col 1 sisi kanan */
+/* row 1 */
+/* #file-icon {
+    color: #234CAD;
+    width: 65px;
+    height: 65px;
+} */
+
+/* row 2 */
+/* .border-cloudup .rounded-circle {
+    border-style: solid;
+    border-width: thin;
+    border-color: #234CAD transparent transparent transparent;
+    
+} */
+
+/* #cloud-up {
+    font-size: 19px;
+    background-color: #F2F6FF;
+    color: #234CAD;
+    
+} */
+
+/* .up-sec .up-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #234CAD;
+} */
+
+/* .up-sec .up-byte {
+    font-size: 12px;
+    font-weight: 400;
+    color: #234CAD;
+} */
+
+/* col 2 sisi kanan */
+/* .up-vertical .container-fluid {
+    width: 140px;
+    height: 170px;
+}
+
+.up-vertical .progress-circle {
+    background-color: white !important;
+}
+.up-vertical .progress-circle:after {
+    background-color: #f2f6ff !important;
+}
+
+.up-vertical .first50-bar {
+    background-color: #234CAD !important;
+}
+
+.up-vertical .value-bar {
+    border: 0.45em solid #234CAD !important;
+} */
+
+/* #cloud-up-ver {
+    font-size: 30px;
+    background-color: #F2F6FF;
+    color: #234CAD;
+    border-style: solid;
+    border-width: thin;
+    border-color: #234CAD #234CAD #234CAD transparent;
+    transform: rotate(-15deg);
+} */
+
+/* .up-byte-ver {
+    font-size: 10px;
+    font-weight: 400;
+    color: #234CAD;
+} */
+#icon-cloud {
+    height: 60px;
+}
+.cloud-sec .rounded-circle {
+    height: 80px;
+    width: 85px;
+    background-color: #F2F6FF;
+}
+
+.cloud-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #234CAD;
+}
+
+.cloud-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #234CAD;
+}
+
+#icon-lock {
+    height: 60px;
+}
+.lock-sec .rounded-circle {
+    height: 80px;
+    width: 85px;
+    background-color: #F2F6FF;
+}
+
+.lock-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #234CAD;
+}
+
+.lock-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #234CAD;
+}
+
+/* content */
+/* kiri */
+.content .parent {
+    padding-top: 108px;
+}
+
+.content .parent .con-left {
+    border-radius: 4rem;
+    background-color: #F2F6FF;
+}
+
+.content .child-1 {
+    padding: 118px 0 115px 0;
+}
+
+/* .child-1 .shadow-1 {
+    background: linear-gradient(34.55deg, #234CAD 9.21%, rgba(35, 76, 173, 0.5) 110.31%);
+    mix-blend-mode: normal;
+    opacity: 0.05;
+    filter: blur(67.957px)
+} */
+
+.child-1 .card-con-1 {
+    width: 438px;
+}
+
+.child-1 .card-con-2 {
+    width: 350px;
+}
+
+.child-1 .card-con-3 {
+    width: 262px;
+}
+
+.card-con-1 .img-con-1 {
+    width: 388px;
+}
+
+.card-con-2 .img-con-2 {
+    width: 310px;
+}
+
+.card-con-3 .img-con-3 {
+    width: 231px;
+}
+
+/* kanan */
+.con-right h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #234CAD;
+}
+
+.con-right p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #234CAD;
+}
+
+.con-right .btn {
+    color: #234CAD !important;
+    border: 2px #234CAD solid;
+    font-weight: 700;
+    width: 150px;
+    height: 47px;
+    margin-top: 20px;
+}
+
+.con-right .btn:hover {
+    background-color: #234CAD !important;
+    color: #fff !important;
+    border: none;
+}
