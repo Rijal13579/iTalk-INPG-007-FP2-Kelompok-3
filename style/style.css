@@ -58,33 +58,33 @@
 }
 
 /* banner */
-.header {
-    padding-top: 75px;
-    padding-bottom: 80px;
+.banner {
+    padding-top: 130px;
+    padding-bottom: 95px;
 }
-.header .container .row {
+.banner .container .row {
     border-radius: 4rem;
     background-color: #F2F6FF;
 }
 
-/* .header .container .row {
+/* .banner .container .row {
     padding-top: 138px;
 
 } */
 
 /* sisi kiri banner */
-.header .desc-left {
+.banner .desc-left {
     margin-top: 138px;
 }
 
-.header .desc-left h1 {
+.banner .desc-left h1 {
     color: #234CAD;
     line-height: 55px;
     font-size: 38px;
     font-weight: 700;
 }
 
-.header .desc-left p {
+.banner .desc-left p {
     color: #234CAD;
     line-height: 21px;
     font-weight: 400;
@@ -92,7 +92,7 @@
     margin-top: 20px;
 }
 
-.header .desc-left .btn {
+.banner .desc-left .btn {
     color: #234CAD !important;
     border: 2px #234CAD solid;
     font-weight: 700;
@@ -100,7 +100,7 @@
     height: 47px;
 }
 
-.header .desc-left .btn:hover {
+.banner .desc-left .btn:hover {
     background-color: #234CAD !important;
     color: #fff !important;
     border: none;
@@ -183,9 +183,13 @@
     font-weight: 400;
     color: #234CAD;
 } */
-#icon-cloud {
-    height: 60px;
+
+/* product */
+/* benefits */
+.benefits {
+    margin-top: 100px;
 }
+
 .cloud-sec .rounded-circle {
     height: 80px;
     width: 85px;
@@ -193,13 +197,13 @@
 }
 
 .cloud-title {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 600;
     color: #234CAD;
 }
 
 .cloud-desc {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     color: #234CAD;
 }
@@ -214,29 +218,33 @@
 }
 
 .lock-title {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: 600;
     color: #234CAD;
 }
 
 .lock-desc {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     color: #234CAD;
 }
 
-/* content */
+/* features 1 */
 /* kiri */
-.content .parent {
-    padding-top: 108px;
+.product-feat-1 {
+    margin-bottom: 230px;
 }
 
-.content .parent .con-left {
+.product .parent {
+    padding-top: 50px;
+}
+
+.product .parent .con-left {
     border-radius: 4rem;
     background-color: #F2F6FF;
 }
 
-.content .child-1 {
+.product .child-1 {
     padding: 118px 0 115px 0;
 }
 
@@ -297,4 +305,31 @@
     background-color: #234CAD !important;
     color: #fff !important;
     border: none;
+}
+
+/* features 2 */
+.product-feat-2 {
+    margin-top: 150px;
+}
+.product .title-feat-2 h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #234CAD;
+}
+
+.product .desc-feat-2 {
+    width: 40%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #234CAD;
+}
+
+.product-feat-2 .features-2 {
+    border-radius: 4rem;
+    background-color: #F2F6FF;
+    margin-top: 100px;
+}
+
+.features-2 img {
+    height: 595px;
 }
