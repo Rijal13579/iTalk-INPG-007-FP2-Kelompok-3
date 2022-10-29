@@ -333,3 +333,47 @@
 .features-2 img {
     height: 595px;
 }
+
+/* about */
+/* kiri */
+.about {
+    margin-top: 200px;
+}
+
+.about-left h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #234CAD;
+}
+
+.about-left p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #234CAD;
+}
+
+.about-left .btn {
+    color: #234CAD !important;
+    border: 2px #234CAD solid;
+    font-weight: 700;
+    width: 150px;
+    height: 47px;
+    margin-top: 20px;
+}
+
+.about-left .btn:hover {
+    background-color: #234CAD !important;
+    color: #fff !important;
+    border: none;
+}
+
+/* kanan */
+.about .parent .about-right {
+    border-radius: 4rem;
+    background-color: #F2F6FF;
+}
+
+.child-1 .img-about {
+    width: 627px;
+    
+}
