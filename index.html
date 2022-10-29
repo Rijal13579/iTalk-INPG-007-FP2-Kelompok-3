@@ -14,48 +14,52 @@
     <link rel="icon" type="image/png" sizes="16x16" href="style/favicon/favicon-16x16.png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-white bg-white sticky-top" id="demo1Navbar">
-      <div class="container pt-4 pb-3">
-        <a class="navbar-brand ps-4 text-dark fw-bold fs-3 pt-1" href="#" data-value="home">
-          <span class="rounded-circle menu-bars">
-            <img src="style/images/menu-btn.svg" style="width: 18px; height: 9px" alt="menu-btn">
-          </span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul id="navbar" class="navbar-nav mx-auto">
-            <li class="nav-item mx-2">
-              <a class="nav-link hvr-underline-from-center active" href="#home" data-value="home">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link hvr-underline-from-center" href="#" data-value="about">About</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link hvr-underline-from-center" href="#" data-value="blog">Product</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link hvr-underline-from-center" href="#" data-value="contact">Contact</a>
-            </li>
-          </ul>
-          <div class="login-signup">
-            <button type="button" id="login" class="btn rounded-pill me-2 hvr-radial-out">Login</button>
-            <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2">Sign up</button>
+    <!-- header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-white bg-white sticky-top" id="demo1Navbar">
+        <div class="container pt-3 pb-3">
+          <a class="navbar-brand ps-4 text-dark fw-bold fs-3" href="#" data-value="home">
+            <span class="rounded-circle menu-bars">
+              <img src="style/images/menu-btn.svg" style="width: 18px; height: 9px" alt="menu-btn">
+            </span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul id="navbar" class="navbar-nav mx-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link hvr-underline-from-center active" href="#home" data-value="home">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link hvr-underline-from-center" href="#product" data-value="product">Product</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link hvr-underline-from-center" href="#" data-value="about">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link hvr-underline-from-center" href="#" data-value="contact">Contact</a>
+              </li>
+            </ul>
+            <div class="login-signup">
+              <button type="button" id="login" class="btn rounded-pill me-2 hvr-radial-out">Login</button>
+              <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2">Sign up</button>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <header class="header" id="home">
+    <!-- banner -->
+    <section class="banner" id="home">
         <div class="container">
           <div class="row main mx-4">
             <div class="col-lg-4 col-md-4 offset-1 col-sm-12 desc-left">
@@ -111,81 +115,110 @@
             </div>
           </div>
         </div>
-    </header>
+    </section>
     
     <!-- cloud based secure -->
-    <div class="container pt-4 mt-4 mb-5">
-      <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="benefits">
+      <div class="container py-2 mt-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="container-fluid">
+                  <div class="row d-flex align-items-center ms-3 ps-3">
+                    <div class="cloud-sec col-lg-2 col-md-2 col-sm-12 d-flex align-items-center">
+                      <span class="rounded-circle d-flex align-items-center justify-content-center px-3 py-2">
+                        <img src="style/images/icon-cloud.svg" style="width: 44px; height: 32px" id="cloud-icon" alt="cloud">
+                      </span>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 cloud">
+                      <span class="cloud-title">Cloud based</span>
+                      <p class="cloud-desc">All your messages are always backed up</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="container-fluid">
-                <div class="row d-flex align-items-center">
-                  <div class="cloud-sec col-lg-2 col-md-2 col-sm-12 d-flex align-items-center">
-                    <span class="rounded-circle d-flex align-items-center justify-content-center px-3 py-2">
-                      <img src="style/images/icon-cloud.svg" style="width: 44px; height: 32px" id="cloud-icon" alt="cloud">
+                <div class="row d-flex align-items-center ms-3 ps-3">
+                  <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center lock-sec">
+                    <span class="rounded-circle d-flex align-items-center justify-content-center px-4 py-2">
+                      <img src="style/images/icon-lock.svg" style="width: 28px; height: 40px" id="lock-icon" alt="lock">
                     </span>
                   </div>
-                  <div class="col-lg-10 col-md-10 col-sm-12 cloud">
-                    <span class="cloud-title">Cloud based</span>
-                    <p class="cloud-desc">All your messages are akways backed up</p>
+                  <div class="col-lg-10 col-md-10 col-sm-12 lock">
+                    <span class="lock-title">Secure</span>
+                    <p class="lock-desc">All your messages are stored very securely</p>
                   </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="container-fluid">
-              <div class="row d-flex align-items-center">
-                <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center lock-sec">
-                  <span class="rounded-circle d-flex align-items-center justify-content-center px-4 py-2">
-                    <img src="style/images/icon-lock.svg" style="width: 28px; height: 40px" id="lock-icon" alt="lock">
-                  </span>
-                </div>
-                <div class="col-lg-10 col-md-10 col-sm-12 lock">
-                  <span class="lock-title">Secure</span>
-                  <p class="lock-desc">All your messages are stored very securely</p>
                 </div>
               </div>
             </div>
-          </div>
+        </div>
       </div>
     </div>
 
-    <!-- use our app to send messages... -->
-    <div class="content">
-      <div class="container my-5 parent">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center con-left">
-            <div class="container child-1">
-              <div class="row d-flex justify-content-center">
-                <span class="bg-white rounded-4 card-con-1">
-                  <img src="style/images/card-con-1.svg" class="py-4 px-2 img-con-1" alt="content-1">
-                </span>
-              </div>
-              <div class="row d-flex justify-content-center pt-4">
-                <span class="bg-white rounded-4 card-con-2">
-                  <img src="style/images/card-con-2.svg" class="py-4 px-2 img-con-3" alt="content-2">
-                </span>
-              </div>
-              <div class="row d-flex justify-content-center pt-4">
-                <span class="bg-white rounded-4 card-con-3">
-                  <img src="style/images/card-con-3.svg" class="py-4 px-2 img-con-3" alt="content-3">
-                </span>
+    <!-- product -->
+    <section id="product" class="product">
+      <!-- features 1 -->
+      <div class="product-feat-1">
+        <div class="container my-5 parent">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center con-left">
+              <div class="container child-1">
+                <div class="row d-flex justify-content-center">
+                  <span class="bg-white rounded-4 card-con-1">
+                    <img src="style/images/card-con-1.svg" class="py-4 px-2 img-con-1" alt="content-1">
+                  </span>
+                </div>
+                <div class="row d-flex justify-content-center pt-4">
+                  <span class="bg-white rounded-4 card-con-2">
+                    <img src="style/images/card-con-2.svg" class="py-4 px-2 img-con-3" alt="content-2">
+                  </span>
+                </div>
+                <div class="row d-flex justify-content-center pt-4">
+                  <span class="bg-white rounded-4 card-con-3">
+                    <img src="style/images/card-con-3.svg" class="py-4 px-2 img-con-3" alt="content-3">
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center con-right">
-            <div class="container d-flex align-items-center">
-              <div class="row mx-5">
-                <div class="col p-4 m-4">
-                  <h1 class="text-wrap">Use our app to send messages to your team</h1>
-                  <p class="text-wrap pt-4">We offer really easy communications for all businesses from small to large</p>
-                  <button type="button" class="btn btn-outline-primary rounded-pill mt-4">Get the app</button>
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center con-right">
+              <div class="container d-flex align-items-center">
+                <div class="row mx-5">
+                  <div class="col p-4 m-4">
+                    <h1 class="text-wrap">Use our app to send messages to your team</h1>
+                    <p class="text-wrap pt-4">We offer really easy communications for all businesses from small to large</p>
+                    <button type="button" class="btn btn-outline-primary rounded-pill mt-4">Get the app</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- features 2 -->
+      <div class="product-feat-2">
+        <div class="container mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="title-feat-2">
+              <h1 class="text-center">Transform your communications</h1>
+            </div>
+            <div class="desc-feat-2 mt-3">
+              <p class="text-center text-wrap">Our mobile app is the only thing you need to change the way you communicate to your team</p>
+            </div>
+          </div>
+          <div class="row features-2">
+            <img src="style/images/features-2.svg" class="py-5" alt="features-2">
+            <!-- <div class="container">
+              <div class="row">
+              </div> -->
+            <!-- <div class="col">
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <script src="js/NavOnScroll.min.js"></script>
     <script src="js/script.js"></script>
