@@ -352,6 +352,31 @@
         </div>
       </div>
     </footer>
+    <!-- login -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3">
+          <form class="signin-validation" novalidate>
+            <h1 class="text-center">Login</h1>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" required>
+              <div class="invalid-feedback">
+                Format email tidak sesuai!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+              <div class="invalid-feedback">
+                Harus diisi!
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="js/NavOnScroll.min.js"></script>
     <script src="js/script.js"></script>
