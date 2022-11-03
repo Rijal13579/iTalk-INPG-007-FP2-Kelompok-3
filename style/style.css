@@ -42,7 +42,6 @@
 }
 
 .login-signup #login:hover {
-    /* background-color: #234CAD !important; */
     color: #fff !important;
 }
 
@@ -53,7 +52,6 @@
 }
 
 .login-signup #signup:hover {
-    /* background-color: #234CAD !important; */
     color: #fff !important;
 }
 
@@ -67,12 +65,6 @@
     background-color: #F2F6FF;
 }
 
-/* .banner .container .row {
-    padding-top: 138px;
-
-} */
-
-/* sisi kiri banner */
 .banner .desc-left {
     margin-top: 138px;
 }
@@ -106,86 +98,6 @@
     border: none;
 }
 
-
-/* sisi kanan banner */
-/* .header .desc-right {
-    padding-top: 10px;
-} */
-
-/* col 1 sisi kanan */
-/* row 1 */
-/* #file-icon {
-    color: #234CAD;
-    width: 65px;
-    height: 65px;
-} */
-
-/* row 2 */
-/* .border-cloudup .rounded-circle {
-    border-style: solid;
-    border-width: thin;
-    border-color: #234CAD transparent transparent transparent;
-    
-} */
-
-/* #cloud-up {
-    font-size: 19px;
-    background-color: #F2F6FF;
-    color: #234CAD;
-    
-} */
-
-/* .up-sec .up-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: #234CAD;
-} */
-
-/* .up-sec .up-byte {
-    font-size: 12px;
-    font-weight: 400;
-    color: #234CAD;
-} */
-
-/* col 2 sisi kanan */
-/* .up-vertical .container-fluid {
-    width: 140px;
-    height: 170px;
-}
-
-.up-vertical .progress-circle {
-    background-color: white !important;
-}
-.up-vertical .progress-circle:after {
-    background-color: #f2f6ff !important;
-}
-
-.up-vertical .first50-bar {
-    background-color: #234CAD !important;
-}
-
-.up-vertical .value-bar {
-    border: 0.45em solid #234CAD !important;
-} */
-
-/* #cloud-up-ver {
-    font-size: 30px;
-    background-color: #F2F6FF;
-    color: #234CAD;
-    border-style: solid;
-    border-width: thin;
-    border-color: #234CAD #234CAD #234CAD transparent;
-    transform: rotate(-15deg);
-} */
-
-/* .up-byte-ver {
-    font-size: 10px;
-    font-weight: 400;
-    color: #234CAD;
-} */
-
-/* product */
-/* benefits */
 .benefits {
     margin-top: 100px;
 }
@@ -247,13 +159,6 @@
 .product .child-1 {
     padding: 118px 0 115px 0;
 }
-
-/* .child-1 .shadow-1 {
-    background: linear-gradient(34.55deg, #234CAD 9.21%, rgba(35, 76, 173, 0.5) 110.31%);
-    mix-blend-mode: normal;
-    opacity: 0.05;
-    filter: blur(67.957px)
-} */
 
 .child-1 .card-con-1 {
     width: 438px;
@@ -397,7 +302,6 @@
 }
 
 .pricing .card-price-side {
-  /* height: 300px; */
   border-radius: 4rem;
   background-color: #F2F6FF;
 }

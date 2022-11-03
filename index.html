@@ -1,26 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>iTalk</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/hover-min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/71c2ab2c83.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="style/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="style/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="style/favicon/favicon-16x16.png">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="style/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/hover-min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/71c2ab2c83.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="style/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="style/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="style/favicon/favicon-16x16.png"
+    />
+  </head>
+
+  <body>
     <!-- header -->
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-white bg-white sticky-top" id="demo1Navbar">
+      <nav
+        class="navbar navbar-expand-lg navbar-white bg-white sticky-top"
+        id="demo1Navbar"
+      >
         <div class="container pt-3 pb-3">
-          <a class="navbar-brand ps-4 text-dark fw-bold fs-3" href="#" data-value="home">
+          <a
+            class="navbar-brand ps-4 text-dark fw-bold fs-3"
+            href="#"
+            data-value="home"
+          >
             <span class="rounded-circle menu-bars">
-              <img src="style/images/menu-btn.svg" style="width: 18px; height: 9px" alt="menu-btn">
+              <img
+                src="style/images/menu-btn.svg"
+                style="width: 18px; height: 9px"
+                alt="menu-btn"
+              />
             </span>
           </a>
           <button
@@ -34,30 +80,87 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul id="navbar" class="navbar-nav mx-auto">
+          <div
+            class="collapse navbar-collapse"
+            id="navbarScroll"
+          >
+            <ul
+              id="navbar"
+              class="navbar-nav mx-auto"
+            >
               <li class="nav-item mx-3">
-                <a class="nav-link hvr-underline-from-center active" href="#home" data-value="home">Home</a>
+                <a
+                  class="nav-link hvr-underline-from-center active"
+                  href="#home"
+                  data-value="home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link hvr-underline-from-center" href="#product" data-value="product">Product</a>
+                <a
+                  class="nav-link hvr-underline-from-center"
+                  href="#product"
+                  data-value="product"
+                  >Product</a
+                >
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link hvr-underline-from-center" href="#about" data-value="about">About</a>
+                <a
+                  class="nav-link hvr-underline-from-center"
+                  href="#about"
+                  data-value="about"
+                  >About</a
+                >
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link hvr-underline-from-center" href="#contact" data-value="contact">Contact</a>
+                <a
+                  class="nav-link hvr-underline-from-center"
+                  href="#contact"
+                  data-value="contact"
+                  >Contact</a
+                >
               </li>
             </ul>
             <div class="login-signup">
               <div id="loggedOut">
-                <button type="button" id="login" class="btn rounded-pill me-2 hvr-radial-out" data-bs-toggle="modal" data-bs-target="#signInModal">Login</button>
-                <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2"data-bs-toggle="modal" data-bs-target="#signUpModal">Sign up</button>
+                <button
+                  type="button"
+                  id="login"
+                  class="btn rounded-pill me-2 hvr-radial-out"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signInModal"
+                >
+                  Login
+                </button>
+                <button
+                  type="button"
+                  id="signup"
+                  class="btn rounded-pill hvr-radial-out ms-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signUpModal"
+                >
+                  Sign up
+                </button>
               </div>
-              
-              <div id="loggedIn" style="display: none;">
-                <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2 " disabled></button>
-                <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2" onclick="signOut()">Logout</button>
+
+              <div
+                id="loggedIn"
+                style="display: none"
+              >
+                <button
+                  type="button"
+                  id="signup"
+                  class="btn rounded-pill hvr-radial-out ms-2"
+                  disabled
+                ></button>
+                <button
+                  type="button"
+                  id="signup"
+                  class="btn rounded-pill hvr-radial-out ms-2"
+                  onclick="signOut()"
+                >
+                  Logout
+                </button>
               </div>
             </div>
           </div>
@@ -66,104 +169,86 @@
     </header>
 
     <!-- banner -->
-    <section class="banner" id="home">
-        <div class="container">
-          <div class="row main mx-4">
-            <div class="col-lg-4 col-md-4 offset-1 col-sm-12 desc-left">
-              <h1 class="text-wrap">Business Communications Reinvented</h1>
-              <p class="text-wrap">Start communicating with your business<br>team more efficiently with our app</p>
-              <button type="button" class="btn btn-outline-primary rounded-pill">Get the app</button>
-            </div>
-            <div class="col-lg-7 col-md-7 col-sm-12 desc-right d-flex">
-                <img src="style/images/banner-home.svg" class="img-fluid" alt="">
-                <!-- <div class="row">
-                    <dov class="col">
-                    </dov> -->
-                  <!-- <div class="col-lg-7 col-md-7">
-                    <div class="row pb-4 mb-1">
-                      <i id="file-icon" class="text-center fa-regular fa-file fa-2x bg-white p-3 rounded-4"></i>
-                    </div>
-                    <div class="row up-horizontal">
-                      <div class="container-fluid bg-white p-4 rounded-4">
-                        <div class="row">
-                          <div class="border-cloudup col-lg-3 col-md-3 d-flex align-items-center">
-                            <span class="rounded-circle">
-                              <i id="cloud-up" class="fa-solid fa-cloud-arrow-up text-center p-3 rounded-circle"></i>
-                            </span>
-                          </div>
-                          <div class="up-sec col-lg-9 col-md-9">
-                            <span class="up-title">Uploading document</span>
-                            <span class="up-byte">7,09/108,98 GB</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                  <!-- <div class="col-lg-5 col-md-5 d-flex align-items-end up-vertical">
-                    <div class="container-fluid bg-white rounded-4 d-flex align-items-center justify-content-center">
-                      <div class="row">
-                        <div class="col">
-                          <div class="progress-circle over50 p70">
-                            <span>
-                              <i id="cloud-up-ver" class="fa-solid fa-cloud-arrow-up text-center p-4 rounded-circle"></i>
-                            </span>
-                            <div class="left-half-clipper">
-                              <div class="first50-bar"></div>
-                              <div class="value-bar"></div>
-                            </div>
-                          </div>
-                          <span class="up-byte-ver d-flex justify-content-center">1,73/2,09 GB</span>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                <!-- </div> -->
-            </div>
+    <section
+      class="banner"
+      id="home"
+    >
+      <div class="container">
+        <div class="row main mx-4">
+          <div class="col-lg-4 col-md-4 offset-1 col-sm-12 desc-left">
+            <h1 class="text-wrap">Business Communications Reinvented</h1>
+            <p class="text-wrap">Start communicating with your business<br />team more efficiently with our app</p>
+            <button
+              type="button"
+              class="btn btn-outline-primary rounded-pill"
+            >
+              Get the app
+            </button>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-12 desc-right d-flex">
+            <img
+              src="style/images/banner-home.svg"
+              class="img-fluid"
+              alt=""
+            />
           </div>
         </div>
+      </div>
     </section>
-    
+
     <!-- benefits -->
     <div class="benefits">
       <div class="container py-2 mt-4">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="container-fluid">
-                  <div class="row d-flex align-items-center ms-3 ps-3">
-                    <div class="cloud-sec col-lg-2 col-md-2 col-sm-12 d-flex align-items-center">
-                      <span class="rounded-circle d-flex align-items-center justify-content-center px-3 py-2">
-                        <img src="style/images/icon-cloud.svg" style="width: 44px; height: 32px" id="cloud-icon" alt="cloud">
-                      </span>
-                    </div>
-                    <div class="col-lg-10 col-md-10 col-sm-12 cloud">
-                      <span class="cloud-title">Cloud based</span>
-                      <p class="cloud-desc">All your messages are always backed up</p>
-                    </div>
-                  </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="container-fluid">
+              <div class="row d-flex align-items-center ms-3 ps-3">
+                <div class="cloud-sec col-lg-2 col-md-2 col-sm-12 d-flex align-items-center">
+                  <span class="rounded-circle d-flex align-items-center justify-content-center px-3 py-2">
+                    <img
+                      src="style/images/icon-cloud.svg"
+                      style="width: 44px; height: 32px"
+                      id="cloud-icon"
+                      alt="cloud"
+                    />
+                  </span>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="container-fluid">
-                <div class="row d-flex align-items-center ms-3 ps-3">
-                  <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center lock-sec">
-                    <span class="rounded-circle d-flex align-items-center justify-content-center px-4 py-2">
-                      <img src="style/images/icon-lock.svg" style="width: 28px; height: 40px" id="lock-icon" alt="lock">
-                    </span>
-                  </div>
-                  <div class="col-lg-10 col-md-10 col-sm-12 lock">
-                    <span class="lock-title">Secure</span>
-                    <p class="lock-desc">All your messages are stored very securely</p>
-                  </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 cloud">
+                  <span class="cloud-title">Cloud based</span>
+                  <p class="cloud-desc">All your messages are always backed up</p>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="container-fluid">
+              <div class="row d-flex align-items-center ms-3 ps-3">
+                <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center lock-sec">
+                  <span class="rounded-circle d-flex align-items-center justify-content-center px-4 py-2">
+                    <img
+                      src="style/images/icon-lock.svg"
+                      style="width: 28px; height: 40px"
+                      id="lock-icon"
+                      alt="lock"
+                    />
+                  </span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 lock">
+                  <span class="lock-title">Secure</span>
+                  <p class="lock-desc">All your messages are stored very securely</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- product -->
-    <section id="product" class="product">
+    <section
+      id="product"
+      class="product"
+    >
       <!-- features 1 -->
       <div class="product-feat-1">
         <div class="container my-5 parent">
@@ -172,17 +257,29 @@
               <div class="container child-1">
                 <div class="row d-flex justify-content-center">
                   <span class="bg-white rounded-4 card-con-1">
-                    <img src="style/images/card-con-1.svg" class="py-4 px-2 img-con-1" alt="content-1">
+                    <img
+                      src="style/images/card-con-1.svg"
+                      class="py-4 px-2 img-con-1"
+                      alt="content-1"
+                    />
                   </span>
                 </div>
                 <div class="row d-flex justify-content-center pt-4">
                   <span class="bg-white rounded-4 card-con-2">
-                    <img src="style/images/card-con-2.svg" class="py-4 px-2 img-con-3" alt="content-2">
+                    <img
+                      src="style/images/card-con-2.svg"
+                      class="py-4 px-2 img-con-3"
+                      alt="content-2"
+                    />
                   </span>
                 </div>
                 <div class="row d-flex justify-content-center pt-4">
                   <span class="bg-white rounded-4 card-con-3">
-                    <img src="style/images/card-con-3.svg" class="py-4 px-2 img-con-3" alt="content-3">
+                    <img
+                      src="style/images/card-con-3.svg"
+                      class="py-4 px-2 img-con-3"
+                      alt="content-3"
+                    />
                   </span>
                 </div>
               </div>
@@ -193,7 +290,12 @@
                   <div class="col p-4 m-4">
                     <h1 class="text-wrap">Use our app to send messages to your team</h1>
                     <p class="text-wrap pt-4">We offer really easy communications for all businesses from small to large</p>
-                    <button type="button" class="btn btn-outline-primary rounded-pill mt-4">Get the app</button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary rounded-pill mt-4"
+                    >
+                      Get the app
+                    </button>
                   </div>
                 </div>
               </div>
@@ -214,20 +316,21 @@
             </div>
           </div>
           <div class="row features-2">
-            <img src="style/images/features-2.svg" class="py-5" alt="features-2">
-            <!-- <div class="container">
-              <div class="row">
-              </div> -->
-            <!-- <div class="col">
-              </div> -->
-            </div>
+            <img
+              src="style/images/features-2.svg"
+              class="py-5"
+              alt="features-2"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- about -->
-    <section id="about" class="about">
+    <section
+      id="about"
+      class="about"
+    >
       <div class="container my-5 parent">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center about-left">
@@ -236,7 +339,12 @@
                 <div class="col p-4 m-4">
                   <h1 class="text-wrap">Increase the efficiency within your company</h1>
                   <p class="text-wrap pt-4">Our app is the great way for you to start getting more tasks done</p>
-                  <button type="button" class="btn btn-outline-primary rounded-pill mt-4">Get the app</button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary rounded-pill mt-4"
+                  >
+                    Get the app
+                  </button>
                 </div>
               </div>
             </div>
@@ -244,7 +352,11 @@
           <div class="col-lg-6 col-md-6 col-sm-12 about-right">
             <div class="container child-1">
               <div class="row">
-                <img src="style/images/about.svg" class="ms-4 img-about" alt="about-img">
+                <img
+                  src="style/images/about.svg"
+                  class="ms-4 img-about"
+                  alt="about-img"
+                />
               </div>
             </div>
           </div>
@@ -269,7 +381,12 @@
                   <h5 class="text-center">Basic</h5>
                   <h1 class="text-center pt-4">&#36;9</h1>
                   <p class="text-center pt-2">Per month</p>
-                  <button type="button" class="btn rounded-pill mt-3">Learn more</button>
+                  <button
+                    type="button"
+                    class="btn rounded-pill mt-3"
+                  >
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>
@@ -281,7 +398,12 @@
                   <h5 class="text-center">Premium</h5>
                   <h1 class="text-center pt-4">&#36;29</h1>
                   <p class="text-center pt-2">Per month</p>
-                  <button type="button" class="btn rounded-pill mt-3">Get started</button>
+                  <button
+                    type="button"
+                    class="btn rounded-pill mt-3"
+                  >
+                    Get started
+                  </button>
                 </div>
               </div>
             </div>
@@ -293,7 +415,12 @@
                   <h5 class="text-center">Enterprise</h5>
                   <h1 class="text-center pt-4">&#36;129</h1>
                   <p class="text-center pt-2">Per month</p>
-                  <button type="button" class="btn rounded-pill mt-3">Learn more</button>
+                  <button
+                    type="button"
+                    class="btn rounded-pill mt-3"
+                  >
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>
@@ -303,7 +430,10 @@
     </div>
 
     <!-- contact -->
-    <section class="contact mb-5 d-flex justify-content-center" id="contact">
+    <section
+      class="contact mb-5 d-flex justify-content-center"
+      id="contact"
+    >
       <div class="container">
         <div class="row sec-text d-flex justify-content-center">
           <div class="title-contact mb-1">
@@ -316,10 +446,20 @@
         <div class="row sec-input d-flex justify-content-center pt-4">
           <div class="col-lg-5 col-md-5 col-sm-12 mb-5">
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+                required
+              />
               <label for="floatingInput">Enter your email address</label>
               <a class="btn hvr-icon-wobble-horizontal">
-                <img src="style/images/send.svg" class="hvr-icon" alt="send-icon">
+                <img
+                  src="style/images/send.svg"
+                  class="hvr-icon"
+                  alt="send-icon"
+                />
               </a>
             </div>
           </div>
@@ -327,6 +467,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container-fluid">
         <div class="row d-flex justify-content-center">
@@ -337,88 +478,222 @@
           <div class="col-lg-2 col-md-2 col-sm-12">
             <h3 class="title-sm fw-bold">Product</h3>
             <ul class="list-unstyled mt-3">
-              <li class="mb-2"><a href="#" data-value="home">Benefits</a></li>
-              <li class="mb-2"><a href="#" data-value="about">Feedback</a></li>
-              <li class="mb-2"><a href="#" data-value="blog">Features</a></li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  data-value="home"
+                  >Benefits</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  data-value="about"
+                  >Feedback</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  data-value="blog"
+                  >Features</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-12">
             <h3 class="title-sm fw-bold">About</h3>
             <ul class="list-unstyled mt-3">
-              <li class="mb-2"><a href="#" data-value="home">Company</a></li>
-              <li class="mb-2"><a href="#" data-value="about">Team</a></li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  data-value="home"
+                  >Company</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  data-value="about"
+                  >Team</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-12">
             <h3 class="title-sm fw-bold">Support</h3>
             <ul class="list-unstyled mt-3">
-              <li class="mb-2"><a href="#" data-value="home">Get help</a></li>
-              <li class="mb-2"><a href="#" data-value="about">Terms of service</a></li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  data-value="home"
+                  >Get help</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  data-value="about"
+                  >Terms of service</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+
     <!-- login -->
-    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="signInModal"
+      tabindex="-1"
+      aria-labelledby="signInLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-3">
-          <form class="signin-validation" novalidate>
+          <form
+            class="signin-validation"
+            novalidate
+          >
             <h1 class="text-center">Login</h1>
             <div class="mb-3">
-              <label for="loginEmail" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="loginEmail" required>
-              <div class="invalid-feedback">
-                Format email tidak sesuai!
-              </div>
+              <label
+                for="loginEmail"
+                class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="loginEmail"
+                required
+              />
+              <div class="invalid-feedback">Format email tidak sesuai!</div>
             </div>
             <div class="mb-3">
-              <label for="loginPassword" class="form-label">Password</label>
-              <input type="password" class="form-control" id="loginPassword" required>
-              <div class="invalid-feedback">
-                Harus diisi!
-              </div>
+              <label
+                for="loginPassword"
+                class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="loginPassword"
+                required
+              />
+              <div class="invalid-feedback">Harus diisi!</div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Login</button>
+            <button
+              type="submit"
+              class="btn btn-primary w-100"
+            >
+              Login
+            </button>
           </form>
         </div>
       </div>
     </div>
+    
     <!-- sign up -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="signUpLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-3">
-          <form class="signup-validation" novalidate>
+          <form
+            class="signup-validation"
+            novalidate
+          >
             <h1 class="text-center">Sign Up</h1>
             <div class="mb-3">
-              <label for="signUpUserName" class="form-label">Username</label>
-              <input type="text" class="form-control" id="signUpUsername" required>
-              <div class="invalid-feedback" id="usernameFeedback">
+              <label
+                for="signUpUserName"
+                class="form-label"
+                >Username</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="signUpUsername"
+                required
+              />
+              <div
+                class="invalid-feedback"
+                id="usernameFeedback"
+              >
                 Harus diisi!
               </div>
             </div>
             <div class="mb-3">
-              <label for="signUpEmail" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="signUpEmail" required>
-              <div class="invalid-feedback" id="emailFeedback">
+              <label
+                for="signUpEmail"
+                class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="signUpEmail"
+                required
+              />
+              <div
+                class="invalid-feedback"
+                id="emailFeedback"
+              >
                 Harus diisi!
               </div>
             </div>
             <div class="mb-3">
-              <label for="signUpPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="signUpPassword1" required>
-              <div class="invalid-feedback" id="password1Feedback">
+              <label
+                for="signUpPassword1"
+                class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPassword1"
+                required
+              />
+              <div
+                class="invalid-feedback"
+                id="password1Feedback"
+              >
                 Harus diisi!
               </div>
             </div>
             <div class="mb-3">
-              <label for="signUpPassword2" class="form-label">Re-type Password</label>
-              <input type="password" class="form-control" id="signUpPassword2" required>
-              <div class="invalid-feedback" id="password2Feedback">
+              <label
+                for="signUpPassword2"
+                class="form-label"
+                >Re-type Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPassword2"
+                required
+              />
+              <div
+                class="invalid-feedback"
+                id="password2Feedback"
+              >
                 Harus diisi!
               </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Submit</button>
+            <button
+              type="submit"
+              class="btn btn-primary w-100"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </div>
@@ -428,6 +703,10 @@
     <script src="js/script.js"></script>
     <script src="js/signInOut.js"></script>
     <script src="js/signUp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
