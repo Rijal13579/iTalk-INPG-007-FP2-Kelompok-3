@@ -105,7 +105,7 @@ password2SignUpListener.onkeyup = () => {
                 }
                 return e;
               });
-              !update && accounts.push({ username, email, password });
+              !updated && accounts.push({ username, email, password });
             }
             localStorage.setItem('accounts', JSON.stringify(accounts));
             alert(updated ? 'Account has been updated!' : 'Sign Up Success!');
