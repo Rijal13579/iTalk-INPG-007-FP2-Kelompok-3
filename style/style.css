@@ -516,3 +516,29 @@
     font-size: 17px;
     padding: 15px 2px 15px 2px;
 }
+
+/* footer */
+footer {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.footer h3 {
+    color: #234CAD;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.footer p {
+    font-weight: 400;
+    color: #234CAD;
+    font-size: 18px;
+    width: 50%;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #234CAD;
+}
