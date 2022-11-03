@@ -443,3 +443,76 @@
   border-radius: 4rem;
   color: #ffffff;
 } 
+
+/* contact */
+.contact {
+    margin-top: 150px;
+}
+
+.contact .container {
+    background-color: #F2F6FF;
+    border-radius: 4rem;
+}
+
+.contact .sec-text {
+    padding-top: 120px;
+}
+  
+.contact .title-contact h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #234CAD;
+}
+
+.contact .desc-contact {
+    width: 33%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #234CAD;
+}
+
+.contact .form-floating {
+    position: relative;
+}
+
+.contact .sec-input .mb-5 {
+    margin-bottom: 70px !important;
+}
+
+.contact input {
+    border-radius: 1.2rem;
+    height: 60px !important;
+}
+
+.contact label {
+    color: #234CAD;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.contact a {
+    position: absolute;
+    bottom: calc(18%);
+    left: calc(88%);
+    background-color: #234CAD;
+    border-radius: 0.7rem;
+}
+
+.contact a:hover {
+    background-color: #234CAD;
+}
+
+.contact a:active {
+    background-color: #142d66 !important;
+}
+
+.contact img {
+    width: 12px;
+    height: 16px;
+}
+
+.contact .icon {
+    color: #fff;
+    font-size: 17px;
+    padding: 15px 2px 15px 2px;
+}
