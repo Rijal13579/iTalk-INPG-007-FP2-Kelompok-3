@@ -1,10 +1,8 @@
-
-
 let formatSpecial = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/
 
 let usernameSignUpListener = document.getElementById("signUpUsername")
 
-usernameSignUpListener.addEventListener('keyup', (event) => {
+usernameSignUpListener.addEventListener('keyup', () => {
   let usernameSigUp = usernameSignUpListener.value
   let validateLength = usernameSigUp.length >= 5 && usernameSigUp.length <= 10
   let validateNoSpecial = !formatSpecial.test(usernameSigUp)
