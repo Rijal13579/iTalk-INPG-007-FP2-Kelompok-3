@@ -14,6 +14,14 @@ function signIn() {
   return false
 }
 
+function signOut() {
+  if (confirm('Logout?')) {
+    localStorage.removeItem('loggedIn')
+    alert('Logout Success!')
+    window.location.replace(window.location.href)
+  }
+}
+
 (function () {
   'use strict'
 
