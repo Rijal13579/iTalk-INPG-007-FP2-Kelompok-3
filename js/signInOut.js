@@ -1,3 +1,19 @@
+function signIn() {
+  let email = document.getElementById("loginEmail").value
+  let password = document.getElementById("loginPassword").value
+  let accounts = JSON.parse(localStorage.getItem('accounts'))
+  if (accounts) {
+    let account = accounts.find(e => e.email === email && e.password === password)
+    if (account) {
+      localStorage.setItem('loggedIn', JSON.stringify(account))
+      alert('Login Success!')
+      return true
+    }
+  }
+  alert('Login Failed!\nEmail or Password not found.')
+  return false
+}
+
 (function () {
   'use strict'
 
