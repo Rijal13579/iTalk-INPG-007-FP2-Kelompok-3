@@ -1,5 +1,6 @@
 let formatSpecial = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 let formatEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+let formatConditionUsername = /(?=.*\d)(?=.*[a-zA-Z])/;
 let formatCondition = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
 
 let usernameSignUpListener = document.getElementById('signUpUsername');
@@ -10,10 +11,13 @@ let password2SignUpListener = document.getElementById('signUpPassword2');
 usernameSignUpListener.addEventListener('keyup', () => {
   let usernameSigUp = usernameSignUpListener.value;
   let validateLength = usernameSigUp.length >= 5 && usernameSigUp.length <= 10;
+  let validateCondition = formatConditionUsername.test(usernameSigUp);
   let validateNoSpecial = !formatSpecial.test(usernameSigUp);
   let message = '';
   message += validateLength ? '' : 'Username kurang dari 5 atau lebih dari 10 karakter';
-  message += validateLength || validateNoSpecial ? '' : '<br>';
+  message += validateLength || validateCondition ? '' : '<br>';
+  message += validateCondition ? '' : 'Username harus mengandung huruf dan angka';
+  message += validateCondition || validateNoSpecial ? '' : '<br>';
   message += validateNoSpecial ? '' : 'Username tidak boleh mengandung spasi atau karakter spesial';
 
   if (message) {
