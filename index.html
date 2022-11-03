@@ -50,10 +50,15 @@
               </li>
             </ul>
             <div class="login-signup">
-              <button type="button" id="login" class="btn rounded-pill me-2 hvr-radial-out" data-bs-toggle="modal"
-              data-bs-target="#signInModal">Login</button>
-              <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2"data-bs-toggle="modal"
-              data-bs-target="#signUpModal">Sign up</button>
+              <div id="loggedOut">
+                <button type="button" id="login" class="btn rounded-pill me-2 hvr-radial-out" data-bs-toggle="modal" data-bs-target="#signInModal">Login</button>
+                <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2"data-bs-toggle="modal" data-bs-target="#signUpModal">Sign up</button>
+              </div>
+              
+              <div id="loggedIn" style="display: none;">
+                <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2 " disabled></button>
+                <button type="button" id="signup" class="btn rounded-pill hvr-radial-out ms-2" onclick="signOut()">Logout</button>
+              </div>
             </div>
           </div>
         </div>
