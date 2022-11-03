@@ -36,13 +36,15 @@
     border: 2px #234CAD solid;
 }
 
-.login-signup .hvr-radial-out:before {
+/* .login-signup .hvr-radial-out:before {
     background: #234CAD;
     border-radius: 4rem;
-}
+} */
 
 .login-signup #login:hover {
     color: #fff !important;
+    background-color: #234CAD;
+    border: none;
 }
 
 .login-signup #signup {
@@ -53,6 +55,7 @@
 
 .login-signup #signup:hover {
     color: #fff !important;
+    background-color: #234CAD !important;
 }
 
 /* banner */
