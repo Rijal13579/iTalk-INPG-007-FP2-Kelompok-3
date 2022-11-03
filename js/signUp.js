@@ -1,11 +1,11 @@
 let formatSpecial = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 let formatEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-let formatCondition = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/
+let formatCondition = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
 
 let usernameSignUpListener = document.getElementById('signUpUsername');
 let emailSignUpListener = document.getElementById('signUpEmail');
-let password1SignUpListener = document.getElementById("signUpPassword1");
-let password2SignUpListener = document.getElementById("signUpPassword2");
+let password1SignUpListener = document.getElementById('signUpPassword1');
+let password2SignUpListener = document.getElementById('signUpPassword2');
 
 usernameSignUpListener.addEventListener('keyup', () => {
   let usernameSigUp = usernameSignUpListener.value;
@@ -39,41 +39,41 @@ emailSignUpListener.onkeyup = () => {
 };
 
 password1SignUpListener.onkeyup = () => {
-  let password1SignUp = password1SignUpListener.value
-  let validateLength = password1SignUp.length >= 6 && password1SignUp.length <= 12
-  let validateCondition = formatCondition.test(password1SignUp)
-  let validateNoSpecial = !formatSpecial.test(password1SignUp)
+  let password1SignUp = password1SignUpListener.value;
+  let validateLength = password1SignUp.length >= 6 && password1SignUp.length <= 12;
+  let validateCondition = formatCondition.test(password1SignUp);
+  let validateNoSpecial = !formatSpecial.test(password1SignUp);
 
   let message = '';
-  message += validateLength ? '' : 'Password kurang dari 6 atau lebih dari 12 karakter'
-  message += validateLength || validateCondition ? '' : '<br>'
-  message += validateCondition ? '' : 'Password minimal harus mengandung 1 huruf kecil, 1 huruf besar, dan 1 angka'
-  message += validateCondition || validateNoSpecial ? '' : '<br>'
-  message += validateNoSpecial ? '' : 'Password tidak boleh mengandung spasi atau karakter spesial'
+  message += validateLength ? '' : 'Password kurang dari 6 atau lebih dari 12 karakter';
+  message += validateLength || validateCondition ? '' : '<br>';
+  message += validateCondition ? '' : 'Password minimal harus mengandung 1 huruf kecil, 1 huruf besar, dan 1 angka';
+  message += validateCondition || validateNoSpecial ? '' : '<br>';
+  message += validateNoSpecial ? '' : 'Password tidak boleh mengandung spasi atau karakter spesial';
 
   console.log(message);
   if (message) {
-    password1SignUpListener.setCustomValidity(message)
-    document.getElementById("password1Feedback").innerHTML = message
+    password1SignUpListener.setCustomValidity(message);
+    document.getElementById('password1Feedback').innerHTML = message;
   } else {
-    password1SignUpListener.setCustomValidity('')
-    document.getElementById("password1Feedback").innerHTML = ''
+    password1SignUpListener.setCustomValidity('');
+    document.getElementById('password1Feedback').innerHTML = '';
   }
-}
+};
 
 password2SignUpListener.onkeyup = () => {
-  let password2SignUp = password2SignUpListener.value
-  let validateSimiliar = password2SignUp === password1SignUpListener.value
+  let password2SignUp = password2SignUpListener.value;
+  let validateSimiliar = password2SignUp === password1SignUpListener.value;
 
   let message = validateSimiliar ? '' : 'Password tidak sama';
   if (message) {
-    password2SignUpListener.setCustomValidity(message)
-    document.getElementById("password2Feedback").innerHTML = message
+    password2SignUpListener.setCustomValidity(message);
+    document.getElementById('password2Feedback').innerHTML = message;
   } else {
-    password2SignUpListener.setCustomValidity('')
-    document.getElementById("password2Feedback").innerHTML = ''
+    password2SignUpListener.setCustomValidity('');
+    document.getElementById('password2Feedback').innerHTML = '';
   }
-}
+};
 
 (function () {
   'use strict';
@@ -97,7 +97,7 @@ password2SignUpListener.onkeyup = () => {
             let accounts = JSON.parse(localStorage.getItem('accounts'));
             let updated = false;
             if (!accounts) accounts = [{ username, email, password }];
-            else
+            else {
               accounts = accounts.map((e) => {
                 if (e.email === email) {
                   updated = true;
@@ -105,7 +105,8 @@ password2SignUpListener.onkeyup = () => {
                 }
                 return e;
               });
-            !updated && accounts.push({ username, email, password });
+              !update && accounts.push({ username, email, password });
+            }
             localStorage.setItem('accounts', JSON.stringify(accounts));
             alert(updated ? 'Account has been updated!' : 'Sign Up Success!');
             window.location.replace(window.location.href);
