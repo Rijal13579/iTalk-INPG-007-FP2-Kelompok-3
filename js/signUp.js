@@ -4,7 +4,8 @@ let formatCondition = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/
 
 let usernameSignUpListener = document.getElementById('signUpUsername');
 let emailSignUpListener = document.getElementById('signUpEmail');
-let password1SignUpListener = document.getElementById("signUpPassword1")
+let password1SignUpListener = document.getElementById("signUpPassword1");
+let password2SignUpListener = document.getElementById("signUpPassword2");
 
 usernameSignUpListener.addEventListener('keyup', () => {
   let usernameSigUp = usernameSignUpListener.value;
@@ -57,6 +58,20 @@ password1SignUpListener.onkeyup = () => {
   } else {
     password1SignUpListener.setCustomValidity('')
     document.getElementById("password1Feedback").innerHTML = ''
+  }
+}
+
+password2SignUpListener.onkeyup = () => {
+  let password2SignUp = password2SignUpListener.value
+  let validateSimiliar = password2SignUp === password1SignUpListener.value
+
+  let message = validateSimiliar ? '' : 'Password tidak sama';
+  if (message) {
+    password2SignUpListener.setCustomValidity(message)
+    document.getElementById("password2Feedback").innerHTML = message
+  } else {
+    password2SignUpListener.setCustomValidity('')
+    document.getElementById("password2Feedback").innerHTML = ''
   }
 }
 
