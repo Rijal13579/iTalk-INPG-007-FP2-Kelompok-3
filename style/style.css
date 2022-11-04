@@ -449,3 +449,12 @@ footer {
     font-weight: 400;
     color: #234CAD;
 }
+
+.modal h1 {
+    font-weight: 600;
+    color: #234CAD;
+}
+
+.modal a {
+    text-decoration: none;
+}
