@@ -55,7 +55,6 @@ password1SignUpListener.onkeyup = () => {
   message += validateCondition || validateNoSpecial ? '' : '<br>';
   message += validateNoSpecial ? '' : 'Password tidak boleh mengandung spasi atau karakter spesial';
 
-  console.log(message);
   if (message) {
     password1SignUpListener.setCustomValidity(message);
     document.getElementById('password1Feedback').innerHTML = message;
@@ -87,7 +86,6 @@ password2SignUpListener.onkeyup = () => {
     form.addEventListener(
       'submit',
       function (event) {
-        console.log('Weww');
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();

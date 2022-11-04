@@ -14,7 +14,7 @@ if (loggedIn) {
     window.location.replace(window.location.href);
   }, oneMin * 3);
 }
-// navonscroll
+
 hide_on_scroll({
   nav_id: 'demo1Navbar',
   hide_onscroll_mobile: true,

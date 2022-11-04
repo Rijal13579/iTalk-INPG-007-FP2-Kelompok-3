@@ -30,7 +30,6 @@ function signOut() {
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
       form.addEventListener('submit', function (event) {
-        console.log('Weww');
         if (!form.checkValidity()) {
           event.preventDefault()
           event.stopPropagation()
