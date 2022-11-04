@@ -11,7 +11,7 @@ if (loggedIn) {
   loggedInDisplay.style.display = 'block';
   setTimeout(() => {
     localStorage.removeItem('loggedIn');
-    window.location.replace(window.location.href);
+    window.location.replace(window.location.origin);
   }, oneMin * 3);
 }
 
