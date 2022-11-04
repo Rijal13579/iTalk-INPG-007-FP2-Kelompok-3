@@ -10,7 +10,6 @@
     font-family: Nunito;
 }
 
-/* navbar */
 .navbar .container a {
     font-weight: 600;
     color: #234CAD !important;
@@ -36,11 +35,6 @@
     border: 2px #234CAD solid;
 }
 
-/* .login-signup .hvr-radial-out:before {
-    background: #234CAD;
-    border-radius: 4rem;
-} */
-
 .login-signup #login:hover {
     color: #fff !important;
     background-color: #234CAD;
@@ -58,7 +52,23 @@
     background-color: #234CAD !important;
 }
 
-/* banner */
+.login-signup #user-log {
+    border: none;
+    color: #234CAD !important;
+    background-color: #F2F6FF !important;
+}
+
+.login-signup #logout {
+    border: none;
+    color: #234CAD !important;
+    background-color: #F2F6FF !important;
+}
+
+.login-signup #logout:hover {
+    color: #fff !important;
+    background-color: #234CAD !important;
+}
+
 .banner {
     padding-top: 130px;
     padding-bottom: 95px;
@@ -72,7 +82,7 @@
     margin-top: 138px;
 }
 
-.banner .desc-left h1 {
+.banner .desc-left h2 {
     color: #234CAD;
     line-height: 55px;
     font-size: 38px;
@@ -144,8 +154,6 @@
     color: #234CAD;
 }
 
-/* features 1 */
-/* kiri */
 .product-feat-1 {
     margin-bottom: 230px;
 }
@@ -187,8 +195,7 @@
     width: 231px;
 }
 
-/* kanan */
-.con-right h1 {
+.con-right h2 {
     font-size: 42px;
     font-weight: 700;
     color: #234CAD;
@@ -215,12 +222,11 @@
     border: none;
 }
 
-/* features 2 */
 .product-feat-2 {
     margin-top: 150px;
 }
 
-.product .title-feat-2 h1 {
+.product .title-feat-2 h2 {
     font-size: 48px;
     font-weight: 700;
     color: #234CAD;
@@ -243,13 +249,11 @@
     height: 595px;
 }
 
-/* about */
-/* kiri */
 .about {
     margin-top: 200px;
 }
 
-.about-left h1 {
+.about-left h2 {
     font-size: 42px;
     font-weight: 700;
     color: #234CAD;
@@ -276,7 +280,6 @@
     border: none;
 }
 
-/* kanan */
 .about .parent .about-right {
     border-radius: 4rem;
     background-color: #F2F6FF;
@@ -286,7 +289,6 @@
     width: 627px;
 }
 
-/* pricing */
 .pricing {
   margin-top: 150px;
 }
@@ -351,7 +353,6 @@
   color: #ffffff;
 } 
 
-/* contact */
 .contact {
     margin-top: 150px;
 }
@@ -365,7 +366,7 @@
     padding-top: 120px;
 }
   
-.contact .title-contact h1 {
+.contact .title-contact h2 {
     font-size: 48px;
     font-weight: 700;
     color: #234CAD;
@@ -424,7 +425,6 @@
     padding: 15px 2px 15px 2px;
 }
 
-/* footer */
 footer {
     margin-top: 200px;
     margin-bottom: 100px;
