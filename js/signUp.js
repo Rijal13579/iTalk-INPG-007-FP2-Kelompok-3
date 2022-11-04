@@ -111,7 +111,7 @@ password2SignUpListener.onkeyup = () => {
             }
             localStorage.setItem('accounts', JSON.stringify(accounts));
             alert(updated ? 'Account has been updated!' : 'Sign Up Success!');
-            window.location.replace(window.location.origin);
+            window.location.replace("index.html");
           }
         }
 

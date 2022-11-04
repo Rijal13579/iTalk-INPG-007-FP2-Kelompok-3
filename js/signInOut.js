@@ -18,7 +18,7 @@ function signOut() {
   if (confirm('Logout?')) {
     localStorage.removeItem('loggedIn')
     alert('Logout Success!')
-    window.location.replace(window.location.origin)
+    window.location.replace("index.html")
   }
 }
 
